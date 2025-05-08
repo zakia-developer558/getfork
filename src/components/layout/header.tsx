@@ -70,7 +70,7 @@ export default function Header() {
         {/* Mobile menu - transparent backdrop with clear text */}
         {mobileMenuOpen && (
           <div className="md:hidden fixed inset-0 z-40 mt-16 backdrop-blur-sm bg-black/10">
-            <div className="px-4 pt-5 pb-6 space-y-4 bg-white/95 rounded-lg mx-4 shadow-xl">
+            <div className="px-4 pt-5 pb-6 space-y-4 bg-white rounded-lg mx-4 shadow-xl">
               <div className="flex flex-col space-y-2">
                 <Link
                   to="/"

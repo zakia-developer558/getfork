@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ChevronUp, ChevronUpIcon, X } from "lucide-react"
+import {  ChevronUpIcon, X } from "lucide-react"
 import bulb from '../../assets/landing/Group 30189.png'
 
 export default function SmartPreOrderSection() {

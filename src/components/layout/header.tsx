@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, X } from "lucide-react";
-import Logo from "./logo";
 import logo from '../../assets/landing/logo.png'
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

@@ -2,31 +2,57 @@ import hero from "../../assets/landing/hero.png";
 
 const HeroSection = () => {
   return (
-    <section className="w-full min-h-[90vh] max-w-6xl mx-auto px-4 py-8 md:py-12 text-center relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-orange-200 rounded-full opacity-20 blur-xl md:blur-2xl transform -translate-y-1/4 translate-x-1/4"></div>
-      
-
+    <section 
+      className="w-full min-h-[90vh] max-w-6xl mx-auto px-4 text-center relative overflow-hidden"
+      style={{ paddingTop: 'clamp(120px, 25vh, 255.5px)' }}
+    >
       <div className="flex flex-col items-center justify-center h-full">
         {/* Text Content */}
-        <div className="mb-6 md:mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6 max-w-3xl mx-auto font-sans " style={{ fontFamily: 'Bricolage Grotesque'}}>
-            Before They Order, Most Customers Get Stuck.
+        <div className="mb-4 md:mb-6 lg:mb-8 w-full">
+          <h1 
+            className="mx-auto"
+            style={{
+              fontFamily: 'Bricolage Grotesque',
+              fontWeight: 700,
+              fontSize: 'clamp(36px, 8vw, 72px)',
+              lineHeight: 'clamp(40px, 8vw, 72px)',
+              letterSpacing: '0px',
+              textAlign: 'center',
+              marginBottom: '1rem'
+            }}
+          >
+            <div>Before They Order, Most</div>
+            <div>Customers Get Stuck.</div>
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: 'Bricolage Grotesque'}}> 
-            79% feel overwhelmed at the decision point. A smart assistant provides the answers and clarity needed to boost
-            conversations—right at the pre-order stage.
-          </p>
+          <div 
+            className="max-w-2xl mx-auto text-center px-2"
+            style={{ 
+              fontFamily: 'Bricolage Grotesque',
+              fontWeight: 400,
+              fontSize: 'clamp(14px, 2vw, 18px)',
+              lineHeight: 'clamp(20px, 3vw, 28px)',
+              color: '#4B5563'
+            }}
+          >
+            <div className="whitespace-normal md:whitespace-nowrap">
+              79% feel overwhelmed at the decision point. A smart assistant provides the answers 
+            </div>
+            <div className="whitespace-normal md:whitespace-nowrap">
+              and clarity needed to boost conversations—right at the pre-order stage.
+            </div>
+          </div>
         </div>
         
-        {/* Hero Image - Responsive sizing */}
-        <div className="w-full max-w-2xl mx-auto mt-4 md:mt-8">
+        {/* Hero Image */}
+        <div className="w-full max-w-2xl mx-auto mt-2 md:mt-4 lg:mt-8 px-2">
           <img
             src={hero}
             alt="Mobile phone showing AI assistant chat interface"
             className="mx-auto w-full h-auto object-contain"
             style={{
-              maxHeight: '60vh' // Limits image height while maintaining responsiveness
+              maxHeight: '60vh'
             }}
+            loading="eager"
           />
         </div>
       </div>

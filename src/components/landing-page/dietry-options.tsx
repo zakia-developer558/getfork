@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import vector from '../../assets/landing/vector.png'
+import dietry from '../../assets/landing/dietry.png'
 
 export default function DietaryFiltersSection() {
   return (
@@ -9,20 +10,9 @@ export default function DietaryFiltersSection() {
           {/* Logo */}
           <div className="relative flex-shrink-0">
             <div className="w-20 h-20 border-2 border-gray-800 rounded-full flex items-center justify-center">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10 25H30M10 25C10 25 12 21 20 21C28 21 30 25 30 25M10 25V15M30 25V15M10 15H30M10 15C10 12.2386 12.2386 10 15 10H25C27.7614 10 30 12.2386 30 15"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
+          <img 
+          src={dietry}
+          />
             </div>
           </div>
 
@@ -39,7 +29,7 @@ export default function DietaryFiltersSection() {
             {/* Top Row */}
             <div className="flex flex-wrap justify-center gap-2">
               {["Halal", "Vegan", "Keto", "Gluten-Free", "Low-Carb"].map((tag) => (
-                <Badge key={tag} className="bg-[#FF6B1E] text-white px-6 py-2 rounded-full text-sm">
+                <Badge key={tag} className="bg-[#FF6B1E] text-white px-6 py-2 rounded-[33.39px] text-[18px] py-[7.79px] px-[35.62px]">
                   {tag}
                 </Badge>
               ))}
@@ -48,7 +38,7 @@ export default function DietaryFiltersSection() {
             {/* Bottom Row */}
             <div className="flex flex-wrap justify-center gap-2 mt-2">
               {["Sugar-Free", "Organic", "Vegetarian", "High-Protein"].map((tag) => (
-                <Badge key={tag} className="bg-[#FF6B1E] text-white px-6 py-2 rounded-full text-sm">
+                <Badge key={tag} className="bg-[#FF6B1E] text-white px-6 py-2 rounded-[33.39px] text-[18px] py-[7.79px] px-[35.62px]">
                   {tag}
                 </Badge>
               ))}

@@ -4,8 +4,9 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { Utensils } from "lucide-react"
 import GetForkModal from "./Get-fork"
+import fork from '../../assets/landing/fork.png'
+import sendButton from '../../assets/landing/Button.png'
 
 
 export default function HowItWorksSection() {
@@ -44,7 +45,10 @@ export default function HowItWorksSection() {
 
           <div className="flex items-center gap-3 mt-2">
             <div className="flex items-center justify-center">
-              <Utensils className="w-6 h-6 text-black" />
+
+              <img
+              src={fork}
+              />
             </div>
 
             <div className="flex-1 relative">
@@ -79,16 +83,10 @@ export default function HowItWorksSection() {
                     </svg>
                   </Button>
                   <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full" onClick={handleSendClick}>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2L12 22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                      <path
-                        d="M17 17L12 22L7 17"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <img 
+                    src={sendButton}
+                    />
+ 
                   </Button>
                 </div>
               </div>

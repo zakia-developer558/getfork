@@ -24,12 +24,6 @@ export default function LandingPage() {
       <PricingSection />
       <FaqSection />
       <CTASection />
-      
-      
-      {/* <HowItWorksSection />
-      <SmartPreOrderSection />
-      <BenefitsSection />
-      <CustomerQuestionsSection /> */} 
     </main>
   )
 }

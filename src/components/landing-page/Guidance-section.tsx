@@ -1,35 +1,40 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Bot, Zap, ChartLine, Target, Settings , Rocket } from "lucide-react"
+import botImage from '../../assets/landing/bot.png'
+import rocketImage from '../../assets/landing/rocket.png'
+import chartImage from '../../assets/landing/chart-line-data-01.png'
+import targetImage from '../../assets/landing/arrow.png'
+import settingsImage from '../../assets/landing/setting.png'
+import zapImage from '../../assets/landing/zap.png'
 
 export default function GuidanceSection() {
   const features = [
     {
-      icon: <Bot className="h-6 w-6" />,
+      image: botImage,
       title: "Always-On Dietary Assistant",
       description: "Answer customer questions 24/7—whether it's about gluten-free, halal, keto, or vegan options. GetFork helps diners order with confidence, without tying up your staff."
     },
     {
-      icon: <Rocket className="h-6 w-6" />,
+      image: rocketImage,
       title: "Boost Conversions by Up to 18%",
       description: "Diners are more likely to complete their orders when their dietary concerns are addressed. GetFork removes hesitation and turns browsers into buyers."
     },
     {
-      icon: <ChartLine className="h-6 w-6" />,
+      image: chartImage,
       title: "Capture Insights in Real Time",
       description: "Every question tells you what customers care about. Discover what they're searching for—diet types, allergens, trends—and use that data to improve your menu and marketing."
     },
     {
-      icon: <Target className="h-6 w-6" />,
+      image: targetImage,
       title: "Hyper-Personalized Promotions",
       description: "Turn preferences into promotions. Send smart, targeted offers and loyalty rewards based on each customer's dietary profile and behavior."
     },
     {
-      icon: <Settings className="h-6 w-6" />,
+      image: settingsImage,
       title: "Works With Any Ordering System",
       description: "No need to rip and replace. GetFork integrates seamlessly with platforms like Cloud Waitress, Toast, Square, GloriaFood, and more—no coding required."
     },
     {
-      icon: <Zap className="h-6 w-6" />,
+      image: zapImage,
       title: "Fast Setup, Zero Downtime",
       description: "Be up and running in minutes. Just drop in our widget—no developers, no disruption. Start capturing more value from every visit instantly."
     }
@@ -51,7 +56,11 @@ export default function GuidanceSection() {
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="bg-muted/50 w-14 h-14 rounded-full flex items-center justify-center mb-4">
-                  {feature.icon}
+                  <img 
+                    src={feature.image} 
+                    alt={feature.title} 
+                    className="w-8 h-8 object-contain" 
+                  />
                 </div>
                 <h3 className="text-xl font-bold">{feature.title}</h3>
               </CardHeader>

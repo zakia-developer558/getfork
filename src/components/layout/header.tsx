@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, X } from "lucide-react";
 import Logo from "./logo";
-
+import logo from '../../assets/landing/logo.png'
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -14,7 +14,9 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Logo />
+          <img
+          src={logo}
+          />
           
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">

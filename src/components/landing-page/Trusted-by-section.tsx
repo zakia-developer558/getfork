@@ -10,15 +10,17 @@ export default function TrustedBySection() {
   const sliderRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const slider = sliderRef.current
-    if (!slider) return
+    // Only run the animation logic on desktop
+    if (window.innerWidth >= 768) {
+      const slider = sliderRef.current
+      if (!slider) return
 
-    // Clone the slider content for seamless infinite scrolling
-    const sliderContent = Array.from(slider.children)
-    sliderContent.forEach((item) => {
-      const clone = item.cloneNode(true)
-      slider.appendChild(clone)
-    })
+      const sliderContent = Array.from(slider.children)
+      sliderContent.forEach((item) => {
+        const clone = item.cloneNode(true)
+        slider.appendChild(clone)
+      })
+    }
   }, [])
 
   return (
@@ -28,7 +30,29 @@ export default function TrustedBySection() {
           Trusted by the best in the business
         </h2>
 
-        <div className="relative">
+        {/* Mobile Grid - Only shows original 5 logos */}
+        <div className="md:hidden">
+          <div className="grid grid-cols-2 gap-8 justify-items-center">
+            <div>
+              <img src={Rob} alt="ROB" className="object-contain h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={stan} alt="Stanford" className="object-contain h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={locked} alt="Locked On" className="object-contain h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={clossus} alt="Colossus" className="object-contain h-12 mx-auto" />
+            </div>
+            <div className="col-span-2">
+              <img src={fullcast} alt="FullCast" className="object-contain h-12 mx-auto" />
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Slider - Only shown on desktop */}
+        <div className="hidden md:block relative">
           <div
             ref={sliderRef}
             className={cn(
@@ -36,49 +60,21 @@ export default function TrustedBySection() {
               "animate-[slider_20s_linear_infinite]"
             )}
           >
+            {/* Original 5 logos only - clones are added by useEffect */}
             <div className="flex-shrink-0">
-              <img
-                src={Rob}
-                alt="ROB"
-                width={120}
-                height={60}
-                className="object-contain h-12"
-              />
+              <img src={Rob} alt="ROB" className="object-contain h-12" />
             </div>
             <div className="flex-shrink-0">
-              <img
-                src={stan}
-                width={120}
-                height={60}
-                className="object-contain h-12"
-              />
+              <img src={stan} alt="Stanford" className="object-contain h-12" />
             </div>
             <div className="flex-shrink-0">
-              <img
-                src={locked}
-                alt="Locked On"
-                width={120}
-                height={60}
-                className="object-contain h-12"
-              />
+              <img src={locked} alt="Locked On" className="object-contain h-12" />
             </div>
             <div className="flex-shrink-0">
-              <img
-                src={clossus}
-                alt="Colossus"
-                width={120}
-                height={60}
-                className="object-contain h-12"
-              />
+              <img src={clossus} alt="Colossus" className="object-contain h-12" />
             </div>
             <div className="flex-shrink-0">
-              <img
-                src={fullcast}
-                alt="FullCast"
-                width={120}
-                height={60}
-                className="object-contain h-12"
-              />
+              <img src={fullcast} alt="FullCast" className="object-contain h-12" />
             </div>
           </div>
         </div>

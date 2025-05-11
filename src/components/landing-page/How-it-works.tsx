@@ -20,14 +20,20 @@ export default function HowItWorksSection() {
   }
 
   return (
-    <section className="w-full max-w-6xl mx-auto px-4 py-16 md:py-24 text-center -mt-22">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: "Bricolage Grotesque" }}>
-        See How It Guides Customers
-        <br />
-        Before They Order
-      </h2>
-      <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
-        This is where the magic happens. The smart assistant lives right on your menu—ready to answer questions, filter
+    <section className="w-full max-w-6xl mx-auto px-4 py-16 md:py-24 text-center -mt-14">
+  <h2 
+  className="font-bold mb-4 text-center" 
+  style={{
+    fontFamily: "Bricolage Grotesque",
+    fontSize: 'clamp(0.75rem, 6vw, 2.25rem)',
+    lineHeight: '1.2'
+  }}
+>
+  <span className="block">See How It Guides Customers <br></br>Before They Order</span>
+</h2>
+<p 
+  className="text-lg text-gray-600 mb-12 mx-auto px-2 sm:px-4 w-[108%] sm:w-[70%] -ml-[4%] sm:ml-auto max-w-none"
+>        This is where the magic happens. The smart assistant lives right on your menu—ready to answer questions, filter
         dishes, and guide undecided customers to the perfect choice. It feels like personalized service, without lifting
         a finger. Try asking it what's gluten-free, what's spicy, or what's light for someone feeling unwell—just like
         your real customers would.

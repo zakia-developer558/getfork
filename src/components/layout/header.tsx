@@ -9,7 +9,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gradient-to-b from-white to-white/80 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-b from-white to-white/80 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -68,50 +68,56 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile menu - transparent backdrop with clear text */}
+      
         {mobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 z-40 mt-16 backdrop-blur-sm bg-black/10">
-            <div className="px-4 pt-5 pb-6 space-y-4 bg-white rounded-lg mx-4 shadow-xl">
-              <div className="flex flex-col space-y-2">
-                <Link
-                  to="/"
-                  className="block px-3 py-3 rounded-lg text-lg font-medium text-gray-900 hover:bg-gray-50/50 transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
+        <div className="md:hidden fixed inset-0 z-40 flex justify-end">
+          <div className="w-full max-w-sm bg-white h-full shadow-xl flex flex-col">
+            <div className="p-4 flex justify-end">
+              <button type="button" className="p-2 text-gray-700" onClick={() => setMobileMenuOpen(false)}>
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+
+            <div className="flex flex-col px-6 py-6 space-y-8">
+              <div className="flex flex-col space-y-6">
+                <Link to="/" className="text-2xl font-medium text-gray-900" onClick={() => setMobileMenuOpen(false)}>
                   Home
                 </Link>
                 <Link
                   to="/terms-conditions"
-                  className="block px-3 py-3 rounded-lg text-lg font-medium text-gray-900 hover:bg-gray-50/50 transition-colors"
+                  className="text-2xl font-medium text-gray-900"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Terms and Conditions
                 </Link>
                 <Link
                   to="/contact"
-                  className="block px-3 py-3 rounded-lg text-lg font-medium text-gray-900 hover:bg-gray-50/50 transition-colors"
+                  className="text-2xl font-medium text-gray-900"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Contact Us
                 </Link>
               </div>
-              
-              <div className="pt-4 border-t border-gray-200/50 mt-4 space-y-3">
+
+              <div className="mt-auto space-y-4">
                 <Link
                   to="#"
-                  className="flex items-center justify-center px-3 py-3 rounded-lg text-lg font-medium text-gray-900 hover:bg-gray-50/50 transition-colors"
+                  className="flex items-center justify-center w-full py-3 px-4 border border-[#ff6b1e] text-[#ff6b1e] rounded-md text-xl font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Log in
-                  <ArrowRight className="h-5 w-5 ml-2" />
+                  Login
                 </Link>
-                <Button className="w-full py-3 bg-[#ff6b1e] hover:bg-[#eb5d25] text-white rounded-lg text-lg font-medium">
-                  Sign up
+                <Button
+                  className="w-full py-6 bg-[#ff6b1e] hover:bg-[#eb5d25] text-white rounded-md text-xl font-medium"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Sign Up
                 </Button>
               </div>
             </div>
           </div>
-        )}
+        </div>
+      )}
       </div>
     </header>
   );

@@ -7,12 +7,12 @@ export default function CustomerQuestionsSection() {
         Every day, customers leave your site with unanswered questions like:
       </h2>
       <div className="max-w-2xl mx-auto mb-8">
-        <p className="text-lg mb-2">"Is this gluten-free?"</p>
-        <p className="text-lg mb-2">"Do you have halal options?"</p>
-        <p className="text-lg mb-6">"Can I make this spicy?"</p>
+        <p className="text-lg mb-1">"Is this gluten-free?"</p>
+        <p className="text-lg mb-1">"Do you have halal options?"</p>
+        <p className="text-lg mb-1">"Can I make this spicy?"</p>
 
         <p className="text-lg text-gray-600">
-          In fact, over 60% of diners ask about dietary needs before placing an order. If they can't find quick answers,
+          In fact, over 60% of diners ask about dietary needs before placing an<br></br> order. If they can't find quick answers,
           they often leave without buying.
         </p>
       </div>

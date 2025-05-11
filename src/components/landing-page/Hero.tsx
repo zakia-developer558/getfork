@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section 
       className="w-full min-h-[90vh] max-w-6xl mx-auto px-4 text-center relative overflow-hidden"
-      style={{ paddingTop: 'clamp(120px, 25vh, 255.5px)' }}
+      style={{ paddingTop: 'clamp(40px, 15vh, 255px)'}}
     >
       <div className="flex flex-col items-center justify-center h-full">
         {/* Text Content */}
@@ -21,26 +21,22 @@ const HeroSection = () => {
               marginBottom: '1rem'
             }}
           >
-            <div>Before They Order, Most</div>
-            <div>Customers Get Stuck.</div>
+            <div>Before They Order, Most Customers Get Stuck.</div>
+            
           </h1>
-          <div 
-            className="max-w-2xl mx-auto text-center px-2"
-            style={{ 
-              fontFamily: 'Bricolage Grotesque',
-              fontWeight: 400,
-              fontSize: 'clamp(14px, 2vw, 18px)',
-              lineHeight: 'clamp(20px, 3vw, 28px)',
-              color: '#4B5563'
-            }}
-          >
-            <div className="whitespace-normal md:whitespace-nowrap">
-              79% feel overwhelmed at the decision point. A smart assistant provides the answers 
-            </div>
-            <div className="whitespace-normal md:whitespace-nowrap">
-              and clarity needed to boost conversations—right at the pre-order stage.
-            </div>
-          </div>
+          <p 
+  className="inline-block w-[92%] md:w-[64%] mx-auto whitespace-normal"
+  style={{
+    fontFamily: 'Bricolage Grotesque',
+    fontWeight: 400,
+    fontSize: 'clamp(14px, 2vw, 18px)',
+    lineHeight: 'clamp(20px, 3vw, 28px)',
+    color: '#4B5563'
+  }}
+>
+79% feel overwhelmed at the decision point. A smart assistant provides the answers and clarity needed to boost conversations—right at the pre-order stage.
+</p>
+ 
         </div>
         
         {/* Hero Image */}

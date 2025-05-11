@@ -13,13 +13,11 @@ export default function SmartPreOrderSection() {
             className="text-center mb-12 mx-auto"
             style={{ width: '896px', height: '145.02px' }}
           >
-            <h3 className="mb-4" style={{ fontFamily: 'Bricolage Grotesque', fontWeight: 700, fontSize: '34px', lineHeight: '40px', letterSpacing: '-0.9px', textAlign: 'center' }}>
+            <h3 className="mb-4" style={{ fontFamily: 'Bricolage Grotesque', fontWeight: 700, fontSize: '34px', lineHeight: '40px', textAlign: 'center' }}>
               This isn't just a chatbot—it's smart pre-order intelligence
-            </h3>
-            <h3 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Bricolage Grotesque' }}>
+            
               Customers don't just ask what — they ask 
-            </h3>
-            <h3 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Bricolage Grotesque' }}>
+
               how, if, can, should, and why.
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -230,16 +228,14 @@ export default function SmartPreOrderSection() {
         <div className="text-center mb-8">
           <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Bricolage Grotesque' }}>
             This isn't just a chatbot—it's smart pre-order intelligence
-          </h3>
-          <h3 className="text-xl font-bold mb-3" style={{ fontFamily: 'Bricolage Grotesque' }}>
+          
             Customers don't just ask what — they ask
-          </h3>
-          <h3 className="text-xl font-bold mb-6" style={{ fontFamily: 'Bricolage Grotesque' }}>
+          
             how, if, can, should, and why.
           </h3>
           <p className="text-muted-foreground">
-            GetFork understands the 5 real types of questions people ask before ordering.
-          </p>
+              GetFork understands the 5 real types of questions people ask before ordering—and answers them with intelligence,<br></br>
+              empathy, and precision.          </p>
         </div>
 
         <div className="space-y-6">

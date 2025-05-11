@@ -3,15 +3,19 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 export default function BenefitsSection() {
   return (
     <section className="w-full max-w-6xl mx-auto px-4 py-16 md:py-24">
-<h2 
-className="text-3xl md:text-4xl font-bold mb-6 text-center leading-tight w-screen max-w-full -translate-x-1/2 ml-[50%] px-4 md:w-[90%] sm:w-[70%] -mt-14"  style={{ fontFamily: 'Bricolage Grotesque' }}
->        GetFork helps restaurants increase revenue by guiding customers at the moment they're most likely to<br></br>
-        leave—before they order.
-      </h2>
-      <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12 text-center">
-        Disconnected menus and unanswered questions lead to confusion and missed sales. We help you turn that
-        uncertainty into action, with real-time guidance that builds trust and drives orders.
-      </p>
+        <h2
+          className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-center leading-snug md:leading-tight px-4 w-full mx-auto -mt-14"
+          style={{ fontFamily: "Bricolage Grotesque" }}
+        >
+          GetFork helps restaurants increase revenue by guiding customers at the moment they're most likely to{" "}
+          <span className="hidden md:inline">
+            <br />
+          </span>
+          leave—before they order.
+        </h2>
+<p className="text-base md:text-lg text-gray-600 mb-8 md:mb-12 text-center px-4 w-[99vw] md:w-[100ch] mx-auto leading-tight md:leading-snug">
+  Disconnected menus and unanswered questions lead to confusion and missed sales. We help you turn that uncertainty into action, with real-time guidance that builds trust and drives orders.
+</p>
 
       <div className="grid md:grid-cols-2 gap-6">
         <Card className="bg-green-50">

@@ -3,7 +3,7 @@ import hero from "../../assets/landing/hero.png";
 const HeroSection = () => {
   return (
     <section 
-      className="w-full min-h-[90vh] max-w-6xl mx-auto px-4 text-center relative overflow-hidden"
+      className="w-full min-h-[90vh] max-w-6xl mx-auto px-4 text-center relative overflow-hidden mt-15"
       style={{ paddingTop: 'clamp(40px, 15vh, 255px)'}}
     >
       <div className="flex flex-col items-center justify-center h-full">

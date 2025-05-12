@@ -8,7 +8,7 @@ interface FaqItem {
 export default function FaqSection() {
   const faqs: FaqItem[] = [
     {
-      question: "Lorem ipsum dolor sit amet consectetur?",
+      question: "Lorem ipsum dolor st amet consectetur?",
       answer:
         "Lorem ipsum dolor sit amet consectetur. Tempus lectus suspendisse iaculis mattis risus quis. Sodales adipiscing pharetra sed quis. Enim eget nunc. Dignissim nunc sed enim. Nunc vitae adipiscing nunc quis. Dignissim vitae eros lobortis adipiscing odio pellentesque a. Nunc in mi faucibus dignissim mauris.",
     },
@@ -55,6 +55,7 @@ export default function FaqSection() {
                 </AccordionItem>
               ))}
             </Accordion>
+            
           </div>
         </div>
       </div>

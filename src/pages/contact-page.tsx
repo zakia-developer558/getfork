@@ -7,7 +7,7 @@ export default function ContactPage() {
         <div className="absolute top-0 left-0 right-0 h-[300px] bg-gradient-to-b from-[#FFF8F5] to-white -z-10" />
   
         <div className="container mx-auto px-4 py-12 max-w-6xl">
-        <div className="mb-12 text-left"> {/* Changed from text-center to text-left */}
+        <div className="mb-12 text-left"> 
     <h1 className="text-4xl font-bold mb-3" style={{ fontFamily: 'Bricolage Grotesque' }}>Get In Touch</h1>
     <p className="text-muted-foreground max-w-2xl">
       Have questions or feedback? We'd love to hear from you.
